@@ -1,0 +1,28 @@
+En Windows 11:
+
+1. Verificar qué versión de Java (JDK) estoy usando con "java -version"
+2. Si no estoy usando la versión 9, entonces instalarla desde la web (si no la tengo) y cambiar a ella.
+Para ello, debo modificar la variable de entorno "path" agregando la versión 9 y poniendola
+por encima de las otras versiones que pueda tener instaladas. Esto lo hago desde el panel de control del
+sistema
+3. Genero el archivo .jar del proyecto ya compilado. Para hacerlo, despliego el menú de opciones en la parte
+superior del editor, busco la opción "file" y selecciono la opción "Project Structure". Luego me voy a donde
+dice "Artifacts" y agrego un nuevo JAR. Una vez hecho eso, me voy nuevamente al menú de opciones, esta vez
+selecciono "Build" y luego la opción "Build Artifacts" y creo el .jar.
+4. Reviso que se haya creado correctamente el .jar. Para ello, me dirijo a la carpeta de mi proyecto,
+luego a out/artifacts/NombreDeMiProyecto_jar y ahí debería estar el archivo NombreDeMiProyecto.jar
+5. Pruebo que funcione el .jar ejecutando: java -jar NombreDeMiProyecto.jar
+6. Distribuir el .jar
+
+En Linux:
+
+1. Verificar qué versión de Java (JDK) estoy usando con "java -version"
+2. Si no estoy usando la versión 9, entonces instalarla con el comando "sudo apt-get install openjdk-9-jdk"
+(si no la tengo)
+3. Cambiar a esa versión ejecutando "sudo update-alternatives --config java" y seleccionando la versión 9
+en la lista de opciones
+4. Genero el archivo .jar del proyecto ya compilado. Para hacerlo, ejecuto "jar cvf NombreDeMiProyecto.jar *"
+5. Reviso que se haya creado correctamente el .jar. Para ello, me dirijo a la carpeta de mi proyecto,
+luego a out/artifacts/NombreDeMiProyecto_jar y ahí debería estar el archivo NombreDeMiProyecto.jar
+6. Pruebo que funcione el .jar ejecutando: java -jar NombreDeMiProyecto.jar
+7. Distribuir el .jar
