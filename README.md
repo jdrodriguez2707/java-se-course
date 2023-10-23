@@ -1,4 +1,4 @@
-# Curso de Introducción Java SE de Platzi 💚
+# Curso de Introducción a Java SE de Platzi 💚
 
 Este repositorio contiene todo lo que aprendí y los ejercicios que realicé durante el curso de introducción a Java SE en Platzi.
 
